@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "C:\VsCode\Lab6B\starter\src\run.py", line 192, in <module>
+    main()
+    ~~~~^^
+  File "C:\VsCode\Lab6B\starter\src\run.py", line 151, in main
+    validate_inputs(pages, questions, plan)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\VsCode\Lab6B\starter\src\run.py", line 42, in validate_inputs
+    raise ValueError("Benchmark changed after freezing")
+ValueError: Benchmark changed after freezing
+
+Traceback (most recent call last):
+  File "C:\VsCode\Lab6B\starter\src\run.py", line 192, in <module>
+    main()
+    ~~~~^^
+  File "C:\VsCode\Lab6B\starter\src\run.py", line 151, in main
+    validate_inputs(pages, questions, plan)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\VsCode\Lab6B\starter\src\run.py", line 56, in validate_inputs
+    raise ValueError("Filters must be given explicitly in the question")
+ValueError: Filters must be given explicitly in the question

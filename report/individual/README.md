@@ -1,3 +1,3 @@
 # Báo cáo cá nhân
 
-Copy `MSSV_HoTen.md` thành `<MSSV>_<HoTen>.md`, điền kết quả thực tế và liên kết đến trace, nhãn audit cùng cấu hình. Không ghi giá trị ví dụ thành kết quả đã chạy.
+Bài làm của Trần Văn Quang nằm ở [2A202604032_TranVanQuang.md](2A202604032_TranVanQuang.md). Kết quả định lượng lấy từ trace đã chạy. Nhãn định tính và tình trạng xác nhận được ghi rõ trong báo cáo.

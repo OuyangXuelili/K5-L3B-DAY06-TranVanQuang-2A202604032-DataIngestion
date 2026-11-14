@@ -1,0 +1,550 @@
+{
+  "page_rule": "Sequential content units grouped at paragraph boundaries to >=2500 characters; merge final tail below 1500 into previous unit. Excludes navigation, footer and table of contents outside main content. Each unit retains full boundaries and SHA-256.",
+  "content_unit_count": 59,
+  "sources": [
+    {
+      "source_id": "python313-controlflow",
+      "title": "4. More Control Flow Tools — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "snapshot_path": "data/raw/controlflow.html",
+      "accessed_at": "2026-11-14T02:23:45.765213+00:00",
+      "license_or_permission": "PSF License Version 2; code examples also 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "raw_sha256": "b985d14cc9c7b109996d54c17e32b3f214c5e4cd0e9020de060f12ed0413bd49",
+      "units": [
+        {
+          "page": 1,
+          "unit_id": "controlflow-001",
+          "characters": 2696,
+          "start": "4. More Control Flow Tools\n\nAs well as the while statement just introduced, Python uses a few more\nt",
+          "end": "er number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):",
+          "sha256": "ef3cce52923d02dc700cfdf1ae5b3977603657822b609647108cc5a1c5e2740a"
+        },
+        {
+          "page": 2,
+          "unit_id": "controlflow-002",
+          "characters": 2671,
+          "start": ">>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, ",
+          "end": "the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.",
+          "sha256": "a7697d18b4b95096cfb18f9a5cb7d7fe6ddac641376ec0d239253b01a66d070b"
+        },
+        {
+          "page": 3,
+          "unit_id": "controlflow-003",
+          "characters": 2677,
+          "start": "This is exemplified in the following for loop,\nwhich searches for prime numbers:\n\n>>> for n in range",
+          "end": " can also extract components (sequence elements\nor object attributes) from the value into variables.",
+          "sha256": "5892ca898bdab8fc3a99e177ec78867afc87b7c19a266fb5b13fd5907818725b"
+        },
+        {
+          "page": 4,
+          "unit_id": "controlflow-004",
+          "characters": 2788,
+          "start": "The simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n  ",
+          "end": "above) or class names\n(recognized by the “(…)” next to them like Point above) are never assigned to.",
+          "sha256": "4fcdb2646b895c13f0907e6c5f0eed032689d91e82c3676964e2b35eac2188a1"
+        },
+        {
+          "page": 5,
+          "unit_id": "controlflow-005",
+          "characters": 2524,
+          "start": "Patterns can be arbitrarily nested.  For example, if we have a short\nlist of Points, with __match_ar",
+          "end": "xplanation and additional examples, you can look into PEP 636 which is written in a tutorial format.",
+          "sha256": "62a24c01d49cf8abe4bc1b0730b51e32527a295980c2414523174c2fb7572ee2"
+        },
+        {
+          "page": 6,
+          "unit_id": "controlflow-006",
+          "characters": 2524,
+          "start": "4.8. Defining Functions\n\nWe can create a function that writes the Fibonacci series to an arbitrary\nb",
+          "end": "Other names can also point to that same\nfunction object and can also be used to access the function:",
+          "sha256": "a7ceb51485926f61b4c39a137bbf87a12aa21cde8fbe2610ccd00cbf99cf3b66"
+        },
+        {
+          "page": 7,
+          "unit_id": "controlflow-007",
+          "characters": 2748,
+          "start": ">>> fib\n<function fib at 10042ed0>\n>>> f = fib\n>>> f(100)\n0 1 1 2 3 5 8 13 21 34 55 89\n\nComing from ",
+          "end": "       if retries < 0:\n            raise ValueError('invalid user response')\n        print(reminder)",
+          "sha256": "cd09c7af869b1df25d40baf2b2c0e5a8cc65cf14d0dcc4a3acab1eceade3cec5"
+        },
+        {
+          "page": 8,
+          "unit_id": "controlflow-008",
+          "characters": 2505,
+          "start": "This function can be called in several ways:\n\ngiving only the mandatory argument: ask_ok('Do you rea",
+          "end": "     # duplicate value for the same argument\nparrot(actor='John Cleese')  # unknown keyword argument",
+          "sha256": "18e2ff8f64266a09303e7b7370626e0659c19b810e097261e61e7e0fc14e6d13"
+        },
+        {
+          "page": 9,
+          "unit_id": "controlflow-009",
+          "characters": 2722,
+          "start": "In a function call, keyword arguments must follow positional arguments.\nAll the keyword arguments pa",
+          "end": "l or keyword   |\n        |                                - Keyword only\n         -- Positional only",
+          "sha256": "924cac797338ffb9e3fcebee056b2d79b35a64aafca4bb8a82c422aff9aaa492"
+        },
+        {
+          "page": 10,
+          "unit_id": "controlflow-010",
+          "characters": 2535,
+          "start": "where / and * are optional. If used, these symbols indicate the kind of\nparameter by how the argumen",
+          "end": "_only_arg(arg=3)\n3\n\nAnd the last uses all three calling conventions in the same function\ndefinition:",
+          "sha256": "b27a6a781fc0f8f1234cf516e5d2c65ac76bfa2ebdbe43c71e62ce99e8c58ddd"
+        },
+        {
+          "page": 11,
+          "unit_id": "controlflow-011",
+          "characters": 2542,
+          "start": ">>> combined_example(1, 2, 3)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <modul",
+          "end": "s may occur.\n\ndef write_multiple_items(file, separator, *args):\n    file.write(separator.join(args))",
+          "sha256": "3acb135a7c0286d6fc0f04cdc25f66b639754bef0c98e0d721e1cf2166c3ade3"
+        },
+        {
+          "page": 12,
+          "unit_id": "controlflow-012",
+          "characters": 2607,
+          "start": "Normally, these variadic arguments will be last in the list of formal\nparameters, because they scoop",
+          "end": "> pairs.sort(key=lambda pair: pair[1])\n>>> pairs\n[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]",
+          "sha256": "c75648a6a33b9b266e953cbe94018658fa229d99e2640c299d6a185ab4a9a5fe"
+        },
+        {
+          "page": 13,
+          "unit_id": "controlflow-013",
+          "characters": 2672,
+          "start": "4.9.7. Documentation Strings\n\nHere are some conventions about the content and formatting of document",
+          "end": " read your code is always a good idea, and adopting\na nice coding style helps tremendously for that.",
+          "sha256": "8b04ab9fc75689c668f2ea1bb6bb69a35d7eb76512192e83aa86b63caab7b1d3"
+        },
+        {
+          "page": 14,
+          "unit_id": "controlflow-014",
+          "characters": 1721,
+          "start": "For Python, PEP 8 has emerged as the style guide that most projects adhere to;\nit promotes a very re",
+          "end": "ject is passed, the caller will see any changes the\ncallee makes to it (items inserted into a list).",
+          "sha256": "02f576128f13d64372360b8732b5cc17bd7cc25f864a6b24a2b6d524a33ccfb1"
+        }
+      ]
+    },
+    {
+      "source_id": "python313-datastructures",
+      "title": "5. Data Structures — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "snapshot_path": "data/raw/datastructures.html",
+      "accessed_at": "2026-11-14T02:23:46.448902+00:00",
+      "license_or_permission": "PSF License Version 2; code examples also 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "raw_sha256": "14cbb79ca8991c75ff9a17db2057640e528bb43b00925e58dd57de2cde746e5b",
+      "units": [
+        {
+          "page": 1,
+          "unit_id": "datastructures-001",
+          "characters": 2550,
+          "start": "5. Data Structures\n\nThis chapter describes some things you’ve learned about already in more detail,\n",
+          "end": "eturn the default None . [ 1 ] This is a design principle for all mutable data structures in\nPython.",
+          "sha256": "c44b038b7ae0525f7a5a92abbf4a59912cd97f01c79e95805118c0f66c2fa1ed"
+        },
+        {
+          "page": 2,
+          "unit_id": "datastructures-002",
+          "characters": 2547,
+          "start": "Another thing you might notice is that not all data can be sorted or\ncompared.  For instance, [None,",
+          "end": " the list of squares without any\nside effects using:\n\nsquares = list(map(lambda x: x**2, range(10)))",
+          "sha256": "5ee1114d10d2861e003625dc8e64a582f59fd09053df8022f7a84bc944bc0dc8"
+        },
+        {
+          "page": 3,
+          "unit_id": "datastructures-003",
+          "characters": 2513,
+          "start": "or, equivalently:\n\nsquares = [x**2 for x in range(10)]\n\nwhich is more concise and readable.\n\nA list ",
+          "end": "length 4:\n\n>>> matrix = [\n...     [1, 2, 3, 4],\n...     [5, 6, 7, 8],\n...     [9, 10, 11, 12],\n... ]",
+          "sha256": "a9377f5bfe864979acab0a89a2bf734ab6ff49f68dda50e9f365ce58e8cff3e9"
+        },
+        {
+          "page": 4,
+          "unit_id": "datastructures-004",
+          "characters": 2723,
+          "start": "The following list comprehension will transpose rows and columns:\n\n>>> [[row[i] for row in matrix] f",
+          "end": " # but they can contain mutable objects:\n>>> v = ([1, 2, 3], [3, 2, 1])\n>>> v\n([1, 2, 3], [3, 2, 1])",
+          "sha256": "68b715fe47a0ea1112ae0c927135de78982c02926ce0dc5592288faf7b2d8618"
+        },
+        {
+          "page": 5,
+          "unit_id": "datastructures-005",
+          "characters": 2546,
+          "start": "As you see, on output tuples are always enclosed in parentheses, so that nested\ntuples are interpret",
+          "end": " iterating over them or printing them can\nproduce the elements in a different order than you expect.",
+          "sha256": "d6d15b2995c2e034dcc70a56c9619373ab90ee63d5bb4a83e976c4c540e38163"
+        },
+        {
+          "page": 6,
+          "unit_id": "datastructures-006",
+          "characters": 2673,
+          "start": "Here is a brief demonstration:\n\n>>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'",
+          "end": "thod instead, which returns None (or a specified default value) if the key is not in the dictionary.",
+          "sha256": "b208a25571c297b71266e3cb6f066783f044f766e914027f37d588511214bcb0"
+        },
+        {
+          "page": 7,
+          "unit_id": "datastructures-007",
+          "characters": 2635,
+          "start": "Performing list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in inserti",
+          "end": "order, use the sorted() function which\nreturns a new sorted list while leaving the source unaltered.",
+          "sha256": "2b3792fd5bdac62471602c19d8b867bee54f882f0d54237e3c80fe472e3ea495"
+        },
+        {
+          "page": 8,
+          "unit_id": "datastructures-008",
+          "characters": 2541,
+          "start": ">>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n>>> for i in sorted(basket):\n.",
+          "end": "', 'Trondheim', 'Hammer Dance'\n>>> non_null = string1 or string2 or string3\n>>> non_null\n'Trondheim'",
+          "sha256": "4900f924d28da4ab009c0ecef7b306f7118c6b7c517448e9d17fe8a27eddb9c3"
+        },
+        {
+          "page": 9,
+          "unit_id": "datastructures-009",
+          "characters": 1844,
+          "start": "Note that in Python, unlike C, assignment inside expressions must be done\nexplicitly with the walrus",
+          "end": "urn the mutated object, which allows method\nchaining, such as d->insert(\"a\")->remove(\"b\")->sort(); .",
+          "sha256": "eb3832ea3999a0d3e5105c581c3dbfffee1d0c0a4d9949fa466ed0fad436749e"
+        }
+      ]
+    },
+    {
+      "source_id": "python313-modules",
+      "title": "6. Modules — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/modules.html",
+      "snapshot_path": "data/raw/modules.html",
+      "accessed_at": "2026-11-14T02:23:47.282663+00:00",
+      "license_or_permission": "PSF License Version 2; code examples also 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "raw_sha256": "e331102d5eba9f1135e82bbec33defbceb638fe3b6d190694ba93b008e597bdc",
+      "units": [
+        {
+          "page": 1,
+          "unit_id": "modules-001",
+          "characters": 2642,
+          "start": "6. Modules\n\nIf you quit from the Python interpreter and enter it again, the definitions you\nhave mad",
+          "end": "s encountered in an import statement. [ 1 ] (They are also run if the file is executed as a script.)",
+          "sha256": "c7b6a3194125f3c03e3f179b7b13bb49dedb41cf21f2b74c595f194197338bd6"
+        },
+        {
+          "page": 2,
+          "unit_id": "modules-002",
+          "characters": 2535,
+          "start": "Each module has its own private namespace, which is used as the global namespace\nby all functions de",
+          "end": "eload() , e.g. import importlib; importlib.reload(modulename) .\n\n6.1.1. Executing modules as scripts",
+          "sha256": "c5b0b277ae619eda661a4e4f740c952b27835d9766da966866d1a3605dfd6dfc"
+        },
+        {
+          "page": 3,
+          "unit_id": "modules-003",
+          "characters": 2664,
+          "start": "When you run a Python module with\n\npython fibo.py <arguments>\n\nthe code in the module will be execut",
+          "end": "vention allows compiled modules from different releases and different\nversions of Python to coexist.",
+          "sha256": "f077dd570a36894d62777dce512419e18701274cee870593c873aa25eaa56eff"
+        },
+        {
+          "page": 4,
+          "unit_id": "modules-004",
+          "characters": 2786,
+          "start": "Python checks the modification date of the source against the compiled version\nto see if it’s out of",
+          "end": "from a built-in default if PYTHONPATH is not set.  You can modify it using standard list\noperations:",
+          "sha256": "526cde752aae8eebbaf79b1c0b359dc3f67d941d7940380dfd0c7b4aa7559dce"
+        },
+        {
+          "page": 5,
+          "unit_id": "modules-005",
+          "characters": 4197,
+          "start": ">>> import sys\n>>> sys.path.append('/ufs/guido/lib/python')\n\n6.3. The dir() Function\n\nThe built-in f",
+          "end": "etattr', 'slice',\n 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars',\n 'zip']",
+          "sha256": "deb847ab470ad4f8ea1fa5eb88b388329421d0b350ad4bd9e6f1f330ff8f4f7f"
+        },
+        {
+          "page": 6,
+          "unit_id": "modules-006",
+          "characters": 2555,
+          "start": "6.4. Packages\n\nPackages are a way of structuring Python’s module namespace by using “dotted\nmodule n",
+          "end": "t can also execute initialization code for the package or\nset the __all__ variable, described later.",
+          "sha256": "d66422d88065c49de56b6868267129667718943d6b30f5377ab0bc7b7ca2cd03"
+        },
+        {
+          "page": 7,
+          "unit_id": "modules-007",
+          "characters": 2604,
+          "start": "Users of the package can import individual modules from the package, for\nexample:\n\nimport sound.effe",
+          "end": "at from sound.effects import * would import the three\nnamed submodules of the sound.effects package.",
+          "sha256": "7d34210f4511f8dbeb91ecf6079cd0ef141a7823e5760527f9da27d752e8aee0"
+        },
+        {
+          "page": 8,
+          "unit_id": "modules-008",
+          "characters": 3049,
+          "start": "Be aware that submodules might become shadowed by locally defined names. For\nexample, if you added a",
+          "end": "ution of a module-level function definition adds the function name to\nthe module’s global namespace.",
+          "sha256": "c886152459eb9ad19e4c74c65a48b4ad75ae3b655dd29f9d1ce42c7eb2efce27"
+        }
+      ]
+    },
+    {
+      "source_id": "python313-inputoutput",
+      "title": "7. Input and Output — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+      "snapshot_path": "data/raw/inputoutput.html",
+      "accessed_at": "2026-11-14T02:23:47.968515+00:00",
+      "license_or_permission": "PSF License Version 2; code examples also 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "raw_sha256": "be403cb24a4d23ddcde2f29ac20df4743e8216ac69d1244382c58dc2ae2a44f4",
+      "units": [
+        {
+          "page": 1,
+          "unit_id": "inputoutput-001",
+          "characters": 2819,
+          "start": "7. Input and Output\n\nThere are several ways to present the output of a program; data can be printed\n",
+          "end": "me representation using either function.  Strings, in\nparticular, have two distinct representations.",
+          "sha256": "c4192b79c051e18f91c3b797c7acbce7f765a111c435733a4863607809e1df57"
+        },
+        {
+          "page": 2,
+          "unit_id": "inputoutput-002",
+          "characters": 2552,
+          "start": "Some examples:\n\n>>> s = 'Hello, world.'\n>>> str(s)\n'Hello, world.'\n>>> repr(s)\n\"'Hello, world.'\"\n>>>",
+          "end": "on these format specifications, see\nthe reference guide for the Format specification mini-language .",
+          "sha256": "7f09d6878ed19a2b519f7cbfd10848d64deb069e4f3a5e6c95e03f855223b30a"
+        },
+        {
+          "page": 3,
+          "unit_id": "inputoutput-003",
+          "characters": 2526,
+          "start": "7.1.2. The String format() Method\n\nBasic usage of the str.format() method looks like this:\n\n>>> prin",
+          "end": "   8\n 3   9   27\n 4  16   64\n 5  25  125\n 6  36  216\n 7  49  343\n 8  64  512\n 9  81  729\n10 100 1000",
+          "sha256": "6f62e5103288b83c7e559b9fd18a24f3889dd2031e700e3ca2f92df858c4f7a6"
+        },
+        {
+          "page": 4,
+          "unit_id": "inputoutput-004",
+          "characters": 2660,
+          "start": "For a complete overview of string formatting with str.format() , see Format string syntax .\n\n7.1.3. ",
+          "end": "le for both reading and\nwriting. The mode argument is optional; 'r' will be assumed if it’s\nomitted.",
+          "sha256": "b61e29c9d9b8d653e769ba53b14dc6105412aba749b4f498a5227afb50978ebc"
+        },
+        {
+          "page": 5,
+          "unit_id": "inputoutput-005",
+          "characters": 2760,
+          "start": "Normally, files are opened in text mode , that means, you read and write\nstrings from and to the fil",
+          "end": " and returned.\nIf the end of the file has been reached, f.read() will return an empty\nstring ( '' ).",
+          "sha256": "8475b8122c47d1fb052e38d462dc37750cd024eb5b581cec6f16e482f542269a"
+        },
+        {
+          "page": 6,
+          "unit_id": "inputoutput-006",
+          "characters": 2664,
+          "start": ">>> f.read()\n'This is the entire file.\\n'\n>>> f.read()\n''\n\nf.readline() reads a single line from the",
+          "end": " which are less frequently used; consult the Library\nReference for a complete guide to file objects.",
+          "sha256": "a6427aadc9e81b13474624365c47699d8a6eaae2717034e58375fbe15eaf84f4"
+        },
+        {
+          "page": 7,
+          "unit_id": "inputoutput-007",
+          "characters": 2523,
+          "start": "7.2.2. Saving structured data with json\n\nStrings can easily be written to and read from a file.  Num",
+          "end": " from an untrusted source can execute\narbitrary code, if the data was crafted by a skilled attacker.",
+          "sha256": "b605bb5904b6f1a5f7ea3d62bbbae5b84a294003beb5390ac276c2e8bf7c0f7d"
+        }
+      ]
+    },
+    {
+      "source_id": "python313-errors",
+      "title": "8. Errors and Exceptions — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "snapshot_path": "data/raw/errors.html",
+      "accessed_at": "2026-11-14T02:23:48.638344+00:00",
+      "license_or_permission": "PSF License Version 2; code examples also 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "raw_sha256": "979a709f665207b9bfaddd3dd8ea2ff9632afa4f3a7986198730cac14e662683",
+      "units": [
+        {
+          "page": 1,
+          "unit_id": "errors-001",
+          "characters": 2687,
+          "start": "8. Errors and Exceptions\n\nUntil now error messages haven’t been more than mentioned, but if you have",
+          "end": "a stack\ntraceback listing source lines; however, it will not display lines read from\nstandard input.",
+          "sha256": "8ffac53672ee2a77e7193d65a36807d8a6c04d5efa9ad10f8fde1a5546c0ff04"
+        },
+        {
+          "page": 2,
+          "unit_id": "errors-002",
+          "characters": 2644,
+          "start": "Built-in Exceptions lists the built-in exceptions and their meanings.\n\n8.3. Handling Exceptions\n\nIt ",
+          "end": "as the\nexception’s arguments . The presence and types of the arguments depend on the\nexception type.",
+          "sha256": "b4ba4c5996e538e0d280c42ce06303b02e599fb441a9d8a3ca8d46a759bca820"
+        },
+        {
+          "page": 3,
+          "unit_id": "errors-003",
+          "characters": 2667,
+          "start": "The except clause may specify a variable after the exception name.  The\nvariable is bound to the exc",
+          "end": " catching an exception\nthat wasn’t raised by the code being protected by the try … except statement.",
+          "sha256": "592cc7ad97cfc92cc9757a55be5200a9b8568ed1400bbca95d04d8dfcb439d1f"
+        },
+        {
+          "page": 4,
+          "unit_id": "errors-004",
+          "characters": 3055,
+          "start": "Exception handlers do not handle only exceptions that occur immediately in the try clause , but also",
+          "end": "le>\n    raise RuntimeError('Failed to open database') from exc\nRuntimeError: Failed to open database",
+          "sha256": "5b16ba87102530414c95ac05a40c8fbf1ef287c50d196b9d0462b2a6a635820c"
+        },
+        {
+          "page": 5,
+          "unit_id": "errors-005",
+          "characters": 2599,
+          "start": "It also allows disabling automatic exception chaining using the from None idiom:\n\n>>> try:\n...     o",
+          "end": "ne from the finally clause’s return statement, not the\nvalue from the try clause’s return statement.",
+          "sha256": "d745a25e0311d497454ef208133f841692edd542720744102de05a37341be08b"
+        },
+        {
+          "page": 6,
+          "unit_id": "errors-006",
+          "characters": 2681,
+          "start": "For example:\n\n>>> def bool_return():\n...     try:\n...         return True\n...     finally:\n...      ",
+          "end": "s desirable to continue execution and collect multiple errors rather than\nraise the first exception.",
+          "sha256": "35ed0c26170e496baae99f8618d7e49c81e4c6994f0309c5b653ae66216e87f9"
+        },
+        {
+          "page": 7,
+          "unit_id": "errors-007",
+          "characters": 2567,
+          "start": "The builtin ExceptionGroup wraps a list of exception instances so\nthat they can be raised together. ",
+          "end": "ically\nbe ones that have already been raised and caught by the program, along\nthe following pattern:",
+          "sha256": "59226651772be4160c3850f7524035be05905fab3aab340a2e91cd695fe03836"
+        },
+        {
+          "page": 8,
+          "unit_id": "errors-008",
+          "characters": 2735,
+          "start": ">>> excs = []\n... for test in tests:\n...     try:\n...         test.run()\n...     except Exception as",
+          "end": "SError: operation failed\n    | Happened in Iteration 3\n    +------------------------------------\n>>>",
+          "sha256": "38bb847cdb942065e26426f8ed90f87c91767c10cfb39942f8824aedbcae2b3e"
+        }
+      ]
+    },
+    {
+      "source_id": "python313-classes",
+      "title": "9. Classes — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "snapshot_path": "data/raw/classes.html",
+      "accessed_at": "2026-11-14T02:23:49.573079+00:00",
+      "license_or_permission": "PSF License Version 2; code examples also 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "raw_sha256": "6adb5bbe14eb9e8ed843d0ba03a33dd392d8ff8e8a70c5e1673dc97497cb2311",
+      "units": [
+        {
+          "page": 1,
+          "unit_id": "classes-001",
+          "characters": 2921,
+          "start": "9. Classes\n\nClasses provide a means of bundling data and functionality together.  Creating\na new cla",
+          "end": "ee the change — this eliminates the\nneed for two different argument passing mechanisms as in Pascal.",
+          "sha256": "d28a9f451711534351b19c6077d7ef09cef5287268479f5475357ae4efffd46a"
+        },
+        {
+          "page": 2,
+          "unit_id": "classes-002",
+          "characters": 2646,
+          "start": "9.2. Python Scopes and Namespaces\n\nBefore introducing classes, I first have to tell you something ab",
+          "end": "wn\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins .)",
+          "sha256": "69f817b4276fafb19f49a79b3322b54fab81dc5c53335a5e86fd46220c823b63"
+        },
+        {
+          "page": 3,
+          "unit_id": "classes-003",
+          "characters": 2808,
+          "start": "The local namespace for a function is created when the function is called, and\ndeleted when the func",
+          "end": "lar, import statements and\nfunction definitions bind the module or function name in the local scope.",
+          "sha256": "57454ae0f286601d13e596649160d52c3e4335d31ea6a23d0273aff22adee678"
+        },
+        {
+          "page": 4,
+          "unit_id": "classes-004",
+          "characters": 2936,
+          "start": "The global statement can be used to indicate that particular\nvariables live in the global scope and ",
+          "end": "ct is bound here to the\nclass name given in the class definition header ( ClassName in the\nexample).",
+          "sha256": "092c34ded9966fd1284cd20ffc446a2b7b65bcb805e95ee1166fa0eaf7fd7878"
+        },
+        {
+          "page": 5,
+          "unit_id": "classes-005",
+          "characters": 2558,
+          "start": "9.3.2. Class Objects\n\nClass objects support two kinds of operations: attribute references and\ninstan",
+          "end": "yClass created above, the following piece of\ncode will print the value 16 , without leaving a trace:",
+          "sha256": "149273b793b1ee6e914e4036b11169501f0ef0c5c536279e2e2166d6bfbb245a"
+        },
+        {
+          "page": 6,
+          "unit_id": "classes-006",
+          "characters": 2510,
+          "start": "x.counter = 1\nwhile x.counter < 10:\n    x.counter = x.counter * 2\nprint(x.counter)\ndel x.counter\n\nTh",
+          "end": "ch instance\nand class variables are for attributes and methods shared by all instances\nof the class:",
+          "sha256": "9202d0c7e3ef1935fd5ec6f7b4cf8b6b9ef23c40d582a2cc9065a9cf3035fafd"
+        },
+        {
+          "page": 7,
+          "unit_id": "classes-007",
+          "characters": 2800,
+          "start": "class Dog:\n\n    kind = 'canine'         # class variable shared by all instances\n\n    def __init__(s",
+          "end": "as long as name conflicts are avoided —\nagain, a naming convention can save a lot of headaches here.",
+          "sha256": "db40d930bbce7a9493f2b25c234e02f34b93a066ab7da20b65b9319913ee0008"
+        },
+        {
+          "page": 8,
+          "unit_id": "classes-008",
+          "characters": 2541,
+          "start": "There is no shorthand for referencing data attributes (or other methods!) from\nwithin methods.  I fi",
+          "end": " “class” without\nsupporting inheritance.  The syntax for a derived class definition looks like\nthis:",
+          "sha256": "e4951454fd073260ad81873772a472ce92156247390162df963eb2841a82bb5c"
+        },
+        {
+          "page": 9,
+          "unit_id": "classes-009",
+          "characters": 2568,
+          "start": "class DerivedClassName(BaseClassName):\n    <statement-1>\n    .\n    .\n    .\n    <statement-N>\n\nThe na",
+          "end": "\n\nclass DerivedClassName(Base1, Base2, Base3):\n    <statement-1>\n    .\n    .\n    .\n    <statement-N>",
+          "sha256": "8871be21ebf63fea5f3512d58d1644b6236df78e263ad337092cb7deea16feae"
+        },
+        {
+          "page": 10,
+          "unit_id": "classes-010",
+          "characters": 2632,
+          "start": "For most purposes, in the simplest cases, you can think of the search for\nattributes inherited from ",
+          "end": " to the syntactic position of the identifier, as long as it\noccurs within the definition of a class.",
+          "sha256": "06bf9e736e51123d48b9ad032e8d7d724b8ff7dbe8343a1e8e12b000b11aafe8"
+        },
+        {
+          "page": 11,
+          "unit_id": "classes-011",
+          "characters": 2517,
+          "start": "See also\n\nThe private name mangling specifications for details and special cases.\n\nName mangling is ",
+          "end": "ance\nobject with the method m() , and m.__func__ is\nthe function object corresponding to the method.",
+          "sha256": "1656fd77b6656b74238d962c3c85508cfd10a11d4454e044fb176e831ab1ef87"
+        },
+        {
+          "page": 12,
+          "unit_id": "classes-012",
+          "characters": 2681,
+          "start": "9.8. Iterators\n\nBy now you have probably noticed that most container objects can be looped over\nusin",
+          "end": "makes generators so\ncompact is that the __iter__() and __next__() methods\nare created automatically.",
+          "sha256": "104c8ab052cdaa3f78f67b13e8e979b13fec85a650903e565a99199c9d1a8463"
+        },
+        {
+          "page": 13,
+          "unit_id": "classes-013",
+          "characters": 1761,
+          "start": "Another key feature is that the local variables and execution state are\nautomatically saved between ",
+          "end": "traction of namespace implementation, and\nshould be restricted to things like post-mortem debuggers.",
+          "sha256": "79050f2019bfa7f698b2e99618e1a0c12c9293f59d16eff698735c0bb40c17d1"
+        }
+      ]
+    }
+  ]
+}

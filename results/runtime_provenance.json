@@ -1,0 +1,17 @@
+{
+  "first_run": "results/selection.json and traces_dev/test.jsonl",
+  "first_test_orchestration_snapshot": "artifacts/implementation_at_test/run.py",
+  "post_test_change": "Added --output-dir and early protection against overwriting an evaluated test. Retrieval, model, queries, splits, evidence, chunking and filters unchanged.",
+  "reproduction": "Same 60 ranked chunk IDs, texts, metadata, hit labels and aggregate metrics. Timing excluded; float32 store reload differences in scores accepted below 1e-6.",
+  "maximum_score_difference": 7.010349101221891e-08,
+  "holdout_note": "First test evaluated after dev selection. Reproduction uses already-viewed test solely for execution verification, not a new independent test.",
+  "human_qualitative_review": "Manually reviewed and confirmed by Trần Văn Quang; see results/approval.json",
+  "human_confirmation_received_at": "2026-11-14T03:30:02.285522+00:00",
+  "reporting_changes_after_test": [
+    "Recorded learner manual-review confirmation without changing labels",
+    "Measured character/token distributions from saved chunks with pinned tokenizer",
+    "Added metadata schema and rubric evidence mapping",
+    "Added Git attributes to preserve frozen bytes on checkout"
+  ],
+  "retrieval_tuned_after_test": false
+}

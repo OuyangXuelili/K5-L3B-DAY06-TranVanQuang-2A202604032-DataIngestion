@@ -1,0 +1,29 @@
+[
+  {
+    "strategy": "A",
+    "split": "dev",
+    "questions": 15,
+    "hit1_n": 6,
+    "hit3_n": 8,
+    "hit1": 0.4,
+    "hit3": 0.5333333333333333
+  },
+  {
+    "strategy": "B",
+    "split": "dev",
+    "questions": 15,
+    "hit1_n": 7,
+    "hit3_n": 10,
+    "hit1": 0.4666666666666667,
+    "hit3": 0.6666666666666666
+  },
+  {
+    "strategy": "C",
+    "split": "dev",
+    "questions": 15,
+    "hit1_n": 8,
+    "hit3_n": 11,
+    "hit1": 0.5333333333333333,
+    "hit3": 0.7333333333333333
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "strategy": "A",
+    "chunks": 362,
+    "min_chars": 60,
+    "max_chars": 500,
+    "mean_chars": 471.55801104972375,
+    "total_chars": 170704,
+    "ingest_seconds": 2.6400317000000086,
+    "model_vectors_computed": 0,
+    "reingest_count_before": 362,
+    "reingest_count_after": 362,
+    "api_cost_usd": 0.0
+  },
+  {
+    "strategy": "B",
+    "chunks": 201,
+    "min_chars": 23,
+    "max_chars": 999,
+    "mean_chars": 772.5124378109452,
+    "total_chars": 155275,
+    "ingest_seconds": 1.7072207000001072,
+    "model_vectors_computed": 0,
+    "reingest_count_before": 201,
+    "reingest_count_after": 201,
+    "api_cost_usd": 0.0
+  },
+  {
+    "strategy": "C",
+    "chunks": 201,
+    "min_chars": 23,
+    "max_chars": 999,
+    "mean_chars": 772.5124378109452,
+    "total_chars": 155275,
+    "ingest_seconds": 1.7227311000001464,
+    "model_vectors_computed": 0,
+    "reingest_count_before": 201,
+    "reingest_count_after": 201,
+    "api_cost_usd": 0.0
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "selected_strategy": "C",
+  "selected_at": "2026-11-14T02:34:44.032623+00:00",
+  "benchmark_sha256": "5b9079c3b41c06d9cdace3134ed3a6364968df66727a6a9c59f5348290cfcd39",
+  "plan_sha256": "d98b8e5d1df38e3f230d3bfe05a759fd939eeae48863eb8603f51fc919f37d60",
+  "rule": [
+    "highest dev Evidence Hit@3",
+    "highest dev Hit@1",
+    "fewest chunks",
+    "alphabetical strategy ID"
+  ],
+  "dev_metrics": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "questions": 15,
+      "hit1_n": 6,
+      "hit3_n": 8,
+      "hit1": 0.4,
+      "hit3": 0.5333333333333333
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "questions": 15,
+      "hit1_n": 7,
+      "hit3_n": 10,
+      "hit1": 0.4666666666666667,
+      "hit3": 0.6666666666666666
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "questions": 15,
+      "hit1_n": 8,
+      "hit3_n": 11,
+      "hit1": 0.5333333333333333,
+      "hit3": 0.7333333333333333
+    }
+  ],
+  "input_hashes": {
+    "data\\pages.jsonl": "b7eb9b6143bdde4a39303c8387eb77465dfbe99f181e14fe673501d6407ab982",
+    "starter\\src\\__init__.py": "660caf610c2d60de4831f443243174b4b97667d8f8100a29225e0c6067f28b4e",
+    "starter\\src\\chunking.py": "f292ac72c86119989f50081b42476e3f1046f1e7d39122ddcc36b033f6f58301",
+    "starter\\src\\embeddings.py": "e96fa040df6f267b35bc09bb3e8b96189e5b3cd040ee0f82a0c6c2752bd8a35b",
+    "starter\\src\\evaluation.py": "cdda5cda5ab7abb1dc2c6af56ffe0ef9a68d4ba7713377c3d12540f15efa7c1d",
+    "starter\\src\\ingestion.py": "66371b6b7f43ec29d47f3d5e8c7c13a1a67a984c7ae8b447fd935c0e8a5c5f4f",
+    "starter\\src\\models.py": "9f26a14cd6139c7b608df067894274308ae7b5c2c2ccd10566079c345fae1710",
+    "starter\\src\\run.py": "f88ae24a027c406f1460da7e8598c9f3975655bb8bfcf4132de6b5f5d8365e5a",
+    "starter\\src\\store.py": "af34fac990769ba0177e41299e9f4a76add756079968ff76566e247977509a37"
+  }
+}

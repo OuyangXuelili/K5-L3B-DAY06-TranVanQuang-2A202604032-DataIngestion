@@ -1,0 +1,18 @@
+{
+  "passed": [
+    "First-test corpus and implementation fingerprints match the saved snapshot",
+    "A: source spans and full non-whitespace coverage",
+    "B: source spans and full non-whitespace coverage",
+    "C: source spans and full non-whitespace coverage",
+    "B and C use exactly the same chunks and metadata",
+    "60 traces, top-3, gold evidence scores, filters and aggregates verified",
+    "Persistent reopen, duplicate-free upsert, obsolete deletion and invalid-vector rejection",
+    "90 audit records counted; human review status read from learner confirmation and per-record attestations"
+  ],
+  "source_units": 59,
+  "questions": 20,
+  "trace_count": 60,
+  "human_audit_confirmed": true,
+  "human_audit_confirmed_by": "Tr\u1ea7n V\u0103n Quang",
+  "human_review_record": "results/approval.json"
+}

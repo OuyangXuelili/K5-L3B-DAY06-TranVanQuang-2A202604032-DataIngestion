@@ -1,0 +1,238 @@
+[
+  {
+    "strategy": "B",
+    "question_id": "q12",
+    "reason": "Without the chapter filter all top-3 passages discuss exception handling rather than file closing. C applies the inputoutput context explicitly supplied in the question and retrieves the source evidence.",
+    "trace": {
+      "hit1": false,
+      "hit3": false,
+      "rank_hits": [
+        false,
+        false,
+        false
+      ],
+      "question": {
+        "id": "q12",
+        "split": "dev",
+        "question": "In the input/output chapter, what happens to a file managed by with if its body raises an exception?",
+        "expected_answer": "The file is properly closed when the suite finishes.",
+        "gold_source_id": "python313-inputoutput",
+        "gold_page": 5,
+        "evidence_quote": "It is good practice to use the with keyword when dealing\nwith file objects.  The advantage is that the file is properly closed\nafter its suite finishes, even if an exception is raised at some\npoint.  Using with is also much shorter than writing\nequivalent try - finally blocks:",
+        "filter": {
+          "chapter": "inputoutput"
+        },
+        "filter_origin": "Chapter explicitly named in question"
+      },
+      "hits": [
+        {
+          "chunk_id": "1133d4ff1a50b73d25d90023c4b58ff8c7904835c2706941f5ed2e228d4dbf86",
+          "document_id": "python313-errors",
+          "source": "https://docs.python.org/3.13/tutorial/errors.html",
+          "page": 4,
+          "text": "Exception handlers do not handle only exceptions that occur immediately in the try clause , but also those that occur inside functions that are called (even\nindirectly) in the try clause . For example:\n\n>>> def this_fails():\n...     x = 1/0\n...\n>>> try:\n...     this_fails()\n... except ZeroDivisionError as err:\n...     print('Handling run-time error:', err)\n...\nHandling run-time error: division by zero\n\n8.4. Raising Exceptions\n\nThe raise statement allows the programmer to force a specified\nexception to occur. For example:\n\n>>> raise NameError('HiThere')\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n    raise NameError('HiThere')\nNameError: HiThere",
+          "metadata": {
+            "chapter": "errors",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "errors-004",
+            "start_char": 0,
+            "end_char": 681
+          },
+          "score": 0.7600629279230826
+        },
+        {
+          "chunk_id": "8a190843a61894aebb7abdc79516fb2823fbc2b0209b4d60da896d5b579eb005",
+          "document_id": "python313-errors",
+          "source": "https://docs.python.org/3.13/tutorial/errors.html",
+          "page": 8,
+          "text": ">>> def f():\n...     raise OSError('operation failed')\n...\n>>> excs = []\n>>> for i in range(3):\n...     try:\n...         f()\n...     except Exception as e:\n...         e.add_note(f'Happened in Iteration {i+1}')\n...         excs.append(e)\n...\n>>> raise ExceptionGroup('We have some problems', excs)\n  + Exception Group Traceback (most recent call last):\n  |   File \"<stdin>\", line 1, in <module>\n  |     raise ExceptionGroup('We have some problems', excs)\n  | ExceptionGroup: We have some problems (3 sub-exceptions)\n  +-+---------------- 1 ----------------\n    | Traceback (most recent call last):\n    |   File \"<stdin>\", line 3, in <module>\n    |     f()\n    |     ~^^\n    |   File \"<stdin>\", line 2, in f\n    |     raise OSError('operation failed')\n    | OSError: operation failed\n    | Happened in Iteration 1\n    +---------------- 2 ----------------\n    | Traceback (most recent call last):\n    |   File \"<stdin>\", line 3, in <module>\n    |     f()\n    |     ~^^\n    |   File \"<stdin>\", line 2,",
+          "metadata": {
+            "chapter": "errors",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "errors-008",
+            "start_char": 1283,
+            "end_char": 2281
+          },
+          "score": 0.7494550572042108
+        },
+        {
+          "chunk_id": "d0ca9ecb4259682c11cbd9d18d0bbd47ee2901d944da2af5f8d9353af51fc741",
+          "document_id": "python313-errors",
+          "source": "https://docs.python.org/3.13/tutorial/errors.html",
+          "page": 2,
+          "text": "Built-in Exceptions lists the built-in exceptions and their meanings.\n\n8.3. Handling Exceptions\n\nIt is possible to write programs that handle selected exceptions. Look at the\nfollowing example, which asks the user for input until a valid integer has been\nentered, but allows the user to interrupt the program (using Control - C or\nwhatever the operating system supports); note that a user-generated interruption\nis signalled by raising the KeyboardInterrupt exception.\n\n>>> while True:\n...     try:\n...         x = int(input(\"Please enter a number: \"))\n...         break\n...     except ValueError:\n...         print(\"Oops!  That was no valid number.  Try again...\")\n...\n\nThe try statement works as follows.\n\nFirst, the try clause (the statement(s) between the try and except keywords) is executed.\n\nIf no exception occurs, the except clause is skipped and execution of the try statement is finished.",
+          "metadata": {
+            "chapter": "errors",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "errors-002",
+            "start_char": 0,
+            "end_char": 899
+          },
+          "score": 0.7393624778695866
+        }
+      ],
+      "strategy": "B",
+      "applied_filter": null,
+      "retrieval_seconds": 0.000675099999853046
+    }
+  },
+  {
+    "strategy": "C",
+    "question_id": "q04",
+    "reason": "Top-3 retrieves adjacent parameter sections, but not the frozen source quote at controlflow unit 10. A chapter filter cannot repair ranking errors within the same chapter.",
+    "trace": {
+      "hit1": false,
+      "hit3": false,
+      "rank_hits": [
+        false,
+        false,
+        false
+      ],
+      "question": {
+        "id": "q04",
+        "split": "dev",
+        "question": "What does the slash in a Python function signature mean for preceding parameters?",
+        "expected_answer": "Parameters before / are positional-only.",
+        "gold_source_id": "python313-controlflow",
+        "gold_page": 10,
+        "evidence_quote": "Looking at this in a bit more detail, it is possible to mark certain parameters\nas positional-only . If positional-only , the parameters’ order matters, and\nthe parameters cannot be passed by keyword. Positional-only parameters are\nplaced before a / (forward-slash). The / is used to logically\nseparate the positional-only parameters from the rest of the parameters.\nIf there is no / in the function definition, there are no positional-only\nparameters.",
+        "filter": null,
+        "filter_origin": null
+      },
+      "hits": [
+        {
+          "chunk_id": "0d0e103952805617d97b1e6725f02f8ff12ea5c2fe6a5f4b9704e63cb93920a9",
+          "document_id": "python313-controlflow",
+          "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+          "page": 9,
+          "text": "When a final formal parameter of the form **name is present, it receives a\ndictionary (see Mapping Types — dict ) containing all keyword arguments except for\nthose corresponding to a formal parameter.  This may be combined with a formal\nparameter of the form *name (described in the next subsection) which\nreceives a tuple containing the positional\narguments beyond the formal parameter list.  ( *name must occur\nbefore **name .) For example, if we define a function like this:\n\ndef cheeseshop(kind, *arguments, **keywords):\n    print(\"-- Do you have any\", kind, \"?\")\n    print(\"-- I'm sorry, we're all out of\", kind)\n    for arg in arguments:\n        print(arg)\n    print(\"-\" * 40)\n    for kw in keywords:\n        print(kw, \":\", keywords[kw])\n\nIt could be called like this:\n\ncheeseshop(\"Limburger\", \"It's very runny, sir.\",\n           \"It's really very, VERY runny, sir.\",\n           shopkeeper=\"Michael Palin\",\n           client=\"John Cleese\",\n           sketch=\"Cheese Shop Sketch\")",
+          "metadata": {
+            "chapter": "controlflow",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "controlflow-009",
+            "start_char": 638,
+            "end_char": 1623
+          },
+          "score": 0.7466080447886124
+        },
+        {
+          "chunk_id": "43bb02ffd30416cafc283762e7962a67974c88dfc4556d50c11c04dc58d13971",
+          "document_id": "python313-controlflow",
+          "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+          "page": 9,
+          "text": "In a function call, keyword arguments must follow positional arguments.\nAll the keyword arguments passed must match one of the arguments\naccepted by the function (e.g. actor is not a valid argument for the parrot function), and their order is not important.  This also includes\nnon-optional arguments (e.g. parrot(voltage=1000) is valid too).\nNo argument may receive a value more than once.\nHere’s an example that fails due to this restriction:\n\n>>> def function(a):\n...     pass\n...\n>>> function(0, a=0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: function() got multiple values for argument 'a'",
+          "metadata": {
+            "chapter": "controlflow",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "controlflow-009",
+            "start_char": 0,
+            "end_char": 636
+          },
+          "score": 0.7453945232090498
+        },
+        {
+          "chunk_id": "48d8791461bbb880068807babf15beae924e6539f45f9f6d3916cdcbccb97995",
+          "document_id": "python313-controlflow",
+          "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+          "page": 11,
+          "text": ">>> foo(1, **{'name': 2})\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: foo() got multiple values for argument 'name'\n>>>\n\nBut using / (positional only arguments), it is possible since it allows name as a positional argument and 'name' as a key in the keyword arguments:\n\n>>> def foo(name, /, **kwds):\n...     return 'name' in kwds\n...\n>>> foo(1, **{'name': 2})\nTrue\n\nIn other words, the names of positional-only parameters can be used in **kwds without ambiguity.\n\n4.9.3.5. Recap\n\nThe use case will determine which parameters to use in the function definition:\n\ndef f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n\nAs guidance:\n\nUse positional-only if you want the name of the parameters to not be\navailable to the user. This is useful when parameter names have no real\nmeaning, if you want to enforce the order of the arguments when the function\nis called or if you need to take some positional parameters and arbitrary\nkeywords.",
+          "metadata": {
+            "chapter": "controlflow",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "controlflow-011",
+            "start_char": 849,
+            "end_char": 1815
+          },
+          "score": 0.7357685266695824
+        }
+      ],
+      "strategy": "C",
+      "applied_filter": null,
+      "retrieval_seconds": 0.0005965000000287546
+    }
+  },
+  {
+    "strategy": "A",
+    "question_id": "q17",
+    "reason": "Exact-evidence score is false because the fixed chunk misses the opening sentence of the frozen quote. Rank 1 still contains the method-resolution explanation. The separate qualitative grounding review finds sufficient answer evidence.",
+    "trace": {
+      "hit1": false,
+      "hit3": false,
+      "rank_hits": [
+        false,
+        false,
+        false
+      ],
+      "question": {
+        "id": "q17",
+        "split": "test",
+        "question": "How does a derived Python class resolve a method reference?",
+        "expected_answer": "Search its class attributes and then descend through base classes as necessary.",
+        "gold_source_id": "python313-classes",
+        "gold_page": 9,
+        "evidence_quote": "There’s nothing special about instantiation of derived classes: DerivedClassName() creates a new instance of the class.  Method references\nare resolved as follows: the corresponding class attribute is searched,\ndescending down the chain of base classes if necessary, and the method reference\nis valid if this yields a function object.",
+        "filter": null,
+        "filter_origin": null
+      },
+      "hits": [
+        {
+          "chunk_id": "c7d6d19e5e49127011066cfed35d263c9ce8184618045a68861420c6483c1aa9",
+          "document_id": "python313-classes",
+          "source": "https://docs.python.org/3.13/tutorial/classes.html",
+          "page": 9,
+          "text": "reates a new instance of the class.  Method references\nare resolved as follows: the corresponding class attribute is searched,\ndescending down the chain of base classes if necessary, and the method reference\nis valid if this yields a function object.\n\nDerived classes may override methods of their base classes.  Because methods\nhave no special privileges when calling other methods of the same object, a\nmethod of a base class that calls another method defined in the same base class\nmay end up call",
+          "metadata": {
+            "chapter": "classes",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "classes-009",
+            "start_char": 900,
+            "end_char": 1400
+          },
+          "score": 0.8142275704211465
+        },
+        {
+          "chunk_id": "e108efa05c2168673612fe78e1b87f5d2e050a952f833889a33ef8338760135a",
+          "document_id": "python313-classes",
+          "source": "https://docs.python.org/3.13/tutorial/classes.html",
+          "page": 8,
+          "text": "There is no shorthand for referencing data attributes (or other methods!) from\nwithin methods.  I find that this actually increases the readability of methods:\nthere is no chance of confusing local variables and instance variables when\nglancing through a method.\n\nOften, the first argument of a method is called self .  This is nothing more\nthan a convention: the name self has absolutely no special meaning to\nPython.  Note, however, that by not following the convention your code may be\nless readab",
+          "metadata": {
+            "chapter": "classes",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "classes-008",
+            "start_char": 0,
+            "end_char": 500
+          },
+          "score": 0.7488469204701206
+        },
+        {
+          "chunk_id": "516edc46a91e7084bc6dcfc30def16e06e2786e69a71f04db434f2d4fda96e4e",
+          "document_id": "python313-classes",
+          "source": "https://docs.python.org/3.13/tutorial/classes.html",
+          "page": 9,
+          "text": "hod defined in the same base class\nmay end up calling a method of a derived class that overrides it.  (For C++\nprogrammers: all methods in Python are effectively virtual .)\n\nAn overriding method in a derived class may in fact want to extend rather than\nsimply replace the base class method of the same name. There is a simple way to\ncall the base class method directly: just call BaseClassName.methodname(self, arguments) .  This is occasionally useful to clients as well.  (Note that this\nonly works",
+          "metadata": {
+            "chapter": "classes",
+            "version": "3.13",
+            "language": "en",
+            "unit_id": "classes-009",
+            "start_char": 1350,
+            "end_char": 1850
+          },
+          "score": 0.7364369761735734
+        }
+      ],
+      "strategy": "A",
+      "applied_filter": null,
+      "retrieval_seconds": 0.001515400000016598
+    }
+  }
+]

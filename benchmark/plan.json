@@ -1,0 +1,33 @@
+{
+  "frozen_at": "2026-11-14T02:27:37.902460+00:00",
+  "benchmark_sha256": "5b9079c3b41c06d9cdace3134ed3a6364968df66727a6a9c59f5348290cfcd39",
+  "split": "q01-q15 dev; q16-q20 classes-only topic holdout; same author prepared all questions",
+  "selection_rule": [
+    "highest dev Evidence Hit@3",
+    "highest dev Hit@1",
+    "fewest chunks",
+    "alphabetical strategy ID"
+  ],
+  "coherence_sampling": "10 evenly spaced source units in document_id/page order; first paragraph start",
+  "model": "BAAI/bge-small-en-v1.5",
+  "dimensions": 384,
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "size": 500,
+      "overlap": 50,
+      "filter": false
+    },
+    "B": {
+      "chunking": "paragraph",
+      "max_size": 1000,
+      "filter": false
+    },
+    "C": {
+      "chunking": "paragraph",
+      "max_size": 1000,
+      "filter": true
+    }
+  },
+  "evidence_authoring_note": "Narrowed q09/q18/q19 to sufficient source sentences before any dev/test retrieval."
+}

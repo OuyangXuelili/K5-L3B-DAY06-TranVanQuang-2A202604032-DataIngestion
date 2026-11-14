@@ -1,0 +1,76 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "revision": "aa8f8b060edb00e03bfdd08813a2949946c8ba55",
+  "tokenizer_sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+  "token_counting": "Includes special tokens; padding and truncation disabled; each chunk counted separately",
+  "percentile_method": "NumPy linear percentile",
+  "model_input_limit": 512,
+  "strategies": [
+    {
+      "strategy": "A",
+      "chunks": 362,
+      "chunk_file_sha256": "f56860483b3383310e5ab1153bdd79408b09958ed659a2f6a9b913303a602d4f",
+      "characters": {
+        "min": 60,
+        "median": 500.0,
+        "p90": 500.0,
+        "max": 500,
+        "mean": 471.55801104972375,
+        "total": 170704
+      },
+      "tokens": {
+        "min": 20,
+        "median": 122.0,
+        "p90": 178.0,
+        "max": 243,
+        "mean": 127.41160220994475,
+        "total": 46123
+      },
+      "chunks_exceeding_model_limit": 0
+    },
+    {
+      "strategy": "B",
+      "chunks": 201,
+      "chunk_file_sha256": "a609ac51baa6ff7032ba6fa42422d0f8fa4ea97043640ee08ea1543ad509f646",
+      "characters": {
+        "min": 23,
+        "median": 837.0,
+        "p90": 985.0,
+        "max": 999,
+        "mean": 772.5124378109452,
+        "total": 155275
+      },
+      "tokens": {
+        "min": 15,
+        "median": 200.0,
+        "p90": 293.0,
+        "max": 479,
+        "mean": 205.70646766169153,
+        "total": 41347
+      },
+      "chunks_exceeding_model_limit": 0
+    },
+    {
+      "strategy": "C",
+      "chunks": 201,
+      "chunk_file_sha256": "a609ac51baa6ff7032ba6fa42422d0f8fa4ea97043640ee08ea1543ad509f646",
+      "characters": {
+        "min": 23,
+        "median": 837.0,
+        "p90": 985.0,
+        "max": 999,
+        "mean": 772.5124378109452,
+        "total": 155275
+      },
+      "tokens": {
+        "min": 15,
+        "median": 200.0,
+        "p90": 293.0,
+        "max": 479,
+        "mean": 205.70646766169153,
+        "total": 41347
+      },
+      "chunks_exceeding_model_limit": 0
+    }
+  ]
+}

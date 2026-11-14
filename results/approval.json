@@ -1,0 +1,25 @@
+{
+  "approved": true,
+  "approved_by": "Trần Văn Quang",
+  "student_id": "2A202604032",
+  "approved_at": "2026-11-14T03:15:51.490423+00:00",
+  "statement": "Trần Văn Quang đã đọc trực tiếp, duyệt thủ công các mẫu đánh giá và phê duyệt kết quả trong báo cáo.",
+  "scope": "Acceptance of the reported experiment results and audit labels, with manual review confirmed by the learner.",
+  "basis": "Explicit instruction from the project owner to record approval of the reported results.",
+  "report": "report/individual/2A202604032_TranVanQuang.md",
+  "audit_record": "results/audit_review.json",
+  "manual_review": {
+    "confirmed": true,
+    "confirmed_by": "Trần Văn Quang",
+    "student_id": "2A202604032",
+    "confirmation_received_at": "2026-11-14T03:30:02.285522+00:00",
+    "basis": "The learner explicitly confirmed direct reading and manual review of the audit samples.",
+    "counts": {
+      "coherence": 30,
+      "grounding": 15,
+      "metadata": 45
+    },
+    "label_changes": 0,
+    "independent_review": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_units": 59,
+  "source_documents": 6,
+  "minimum_unit_chars": 1721,
+  "total_content_chars": 155554,
+  "empty_units": 0,
+  "normalization": "NFC; paragraph boundaries kept",
+  "all_raw_and_unit_hashes_valid": true,
+  "maximum_document_tokens": {
+    "A": 243,
+    "B": 479,
+    "C": 479
+  },
+  "model_input_limit": 512,
+  "truncated_chunks": 0
+}

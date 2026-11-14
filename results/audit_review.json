@@ -1,0 +1,65 @@
+{
+  "reviewed_at": "2026-11-14T02:56:38.747706+00:00",
+  "reviewer": "ChatGPT/Codex",
+  "method": "Direct reading of fixed chunk samples and test top-3; metadata cross-check against saved source units. No retrieval or benchmark tuning.",
+  "coherence": {
+    "reviewed": 30,
+    "label_changes": 0,
+    "means": {
+      "A": 1.0,
+      "B": 1.8,
+      "C": 1.8
+    }
+  },
+  "grounding": {
+    "reviewed": 15,
+    "label_changes": 0,
+    "means": {
+      "A": 2.0,
+      "B": 2.0,
+      "C": 2.0
+    },
+    "supporting_quotes_recorded": 15
+  },
+  "metadata": {
+    "reviewed": 45,
+    "complete_and_correct": 45
+  },
+  "human_confirmation": {
+    "confirmed": true,
+    "confirmed_by": "Trần Văn Quang",
+    "student_id": "2A202604032",
+    "confirmation_received_at": "2026-11-14T03:30:02.285522+00:00",
+    "basis": "The learner explicitly confirmed direct reading and manual review of the audit samples.",
+    "counts": {
+      "coherence": 30,
+      "grounding": 15,
+      "metadata": 45
+    },
+    "label_changes": 0,
+    "independent_review": false
+  },
+  "submission": {
+    "technical_artifacts": "present and verified",
+    "qualitative_review": "Initial AI-assisted labels subsequently read and confirmed manually by Trần Văn Quang; scores unchanged",
+    "human_label_review": "Completed and confirmed by Trần Văn Quang; all 90 audit records reviewed",
+    "lms_submission": "not verified",
+    "owner_approval": "Approved by Trần Văn Quang; see results/approval.json"
+  },
+  "frozen_results_sha256": {
+    "benchmark/questions.jsonl": "5b9079c3b41c06d9cdace3134ed3a6364968df66727a6a9c59f5348290cfcd39",
+    "benchmark/plan.json": "d98b8e5d1df38e3f230d3bfe05a759fd939eeae48863eb8603f51fc919f37d60",
+    "results/traces_dev.jsonl": "b2d23e183052922133e32695c1b5813ce09db9a0ddbe96521a97a8edc7cb58a9",
+    "results/traces_test.jsonl": "f725ffd58622bd65b0e9fdeb96d0e96b082fd705919f30780efa3d7528e148bf",
+    "results/metrics_dev.json": "b87a06f9a5d69238a4df5621448e2841863e88d80e3853a329374712b6a4dcf7",
+    "results/metrics_test.json": "b272e603fcf29b846e92717c360fae532639391969826abb1d28cf3fcb91dbb1",
+    "results/selection.json": "1d3eb3ebd8ac844478297a8744e1d6a4371f6eb1fd10bb393d3e83ba454c9ed4"
+  },
+  "owner_approval": {
+    "approved": true,
+    "approved_by": "Trần Văn Quang",
+    "student_id": "2A202604032",
+    "approved_at": "2026-11-14T03:15:51.490423+00:00",
+    "record": "results/approval.json"
+  }
+}

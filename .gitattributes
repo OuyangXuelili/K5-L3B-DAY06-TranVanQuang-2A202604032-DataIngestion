@@ -1,0 +1,11 @@
+# Preserve frozen experiment bytes across Git checkouts.
+* text=auto whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/starter/src/*.py -text
+/artifacts/implementation_at_test/*.py -text
+/data/*.json -text
+/data/*.jsonl -text
+/data/raw/*.html -text -whitespace
+/benchmark/*.json -text
+/benchmark/*.jsonl -text
+/results/*.json -text
+/results/*.jsonl -text

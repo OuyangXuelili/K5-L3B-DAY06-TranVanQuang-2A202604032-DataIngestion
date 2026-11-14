@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed,500,50,"source,page,chapter,version,language,unit_id,character spans",False,BAAI/bge-small-en-v1.5@aa8f8b060edb00e03bfdd08813a2949946c8ba55,Fixed windows may split evidence,0.4,0.5333333333333333,0.6,0.8,362 chunks; reported ingest time is warm-cache; no API charge; qualitative review method and source evidence recorded in audit files
+B,paragraph,1000,0,"source,page,chapter,version,language,unit_id,character spans",False,BAAI/bge-small-en-v1.5@aa8f8b060edb00e03bfdd08813a2949946c8ba55,Paragraph boundaries preserve context,0.4666666666666667,0.6666666666666666,1.0,1.0,201 chunks; reported ingest time is warm-cache; no API charge; qualitative review method and source evidence recorded in audit files
+C,paragraph,1000,0,"source,page,chapter,version,language,unit_id,character spans",True,BAAI/bge-small-en-v1.5@aa8f8b060edb00e03bfdd08813a2949946c8ba55,Chapter context reduces cross-chapter retrieval,0.5333333333333333,0.7333333333333333,1.0,1.0,201 chunks; reported ingest time is warm-cache; no API charge; qualitative review method and source evidence recorded in audit files

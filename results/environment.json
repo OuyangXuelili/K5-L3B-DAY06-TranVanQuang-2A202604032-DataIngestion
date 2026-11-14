@@ -1,0 +1,20 @@
+{
+  "completed_at": "2026-11-14T02:34:47.040565+00:00",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "store": "Qdrant local persistent, exact cosine search",
+  "packages": {
+    "fastembed": "0.9.1",
+    "qdrant-client": "1.20.0",
+    "onnxruntime": "1.32.0",
+    "numpy": "2.5.4"
+  },
+  "model": "BAAI/bge-small-en-v1.5",
+  "model_revision": "aa8f8b060edb00e03bfdd08813a2949946c8ba55",
+  "dimensions": 384,
+  "provider": "CPUExecutionProvider",
+  "query_method": "FastEmbed query_embed",
+  "document_method": "FastEmbed passage_embed",
+  "api_cost_usd": 0.0,
+  "notes": "Local compute/electricity and download costs excluded. C reuses B embedding cache."
+}

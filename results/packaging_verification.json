@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-11-14T03:40:25.374080+00:00",
+  "git_autocrlf": "true",
+  "git_storage_preserves_frozen_bytes": true,
+  "files_checked": [
+    "artifacts/implementation_at_test/run.py",
+    "benchmark/plan.json",
+    "benchmark/questions.jsonl",
+    "data/pages.jsonl",
+    "data/raw/classes.html",
+    "data/raw/controlflow.html",
+    "data/raw/datastructures.html",
+    "data/raw/errors.html",
+    "data/raw/inputoutput.html",
+    "data/raw/modules.html",
+    "results/metrics_dev.json",
+    "results/metrics_test.json",
+    "results/selection.json",
+    "results/traces_dev.jsonl",
+    "results/traces_test.jsonl",
+    "starter/src/__init__.py",
+    "starter/src/chunking.py",
+    "starter/src/embeddings.py",
+    "starter/src/evaluation.py",
+    "starter/src/ingestion.py",
+    "starter/src/models.py",
+    "starter/src/run.py",
+    "starter/src/store.py"
+  ],
+  "frozen_benchmark_and_results_unchanged": true,
+  "broken_local_markdown_links": 0,
+  "chunk_statistics_match_saved_outputs": true
+}

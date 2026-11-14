@@ -1,0 +1,89 @@
+[
+  {
+    "strategy": "A",
+    "coherence_mean": 1.0,
+    "coherence_n": 10,
+    "grounding_mean": 2.0,
+    "grounding_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "metadata_correct_n": 15,
+    "metadata_N": 15,
+    "filter_compliance": {
+      "dev": {
+        "n": 2,
+        "N": 3
+      },
+      "test": {
+        "n": 0,
+        "N": 1
+      }
+    },
+    "qualitative_reviewer": "AI-assisted qualitative review by ChatGPT",
+    "qualitative_review_status": "Reviewed and confirmed manually by the learner",
+    "human_confirmed": true,
+    "human_reviewers": [
+      "Tr\u1ea7n V\u0103n Quang"
+    ]
+  },
+  {
+    "strategy": "B",
+    "coherence_mean": 1.8,
+    "coherence_n": 10,
+    "grounding_mean": 2.0,
+    "grounding_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "metadata_correct_n": 15,
+    "metadata_N": 15,
+    "filter_compliance": {
+      "dev": {
+        "n": 2,
+        "N": 3
+      },
+      "test": {
+        "n": 1,
+        "N": 1
+      }
+    },
+    "qualitative_reviewer": "AI-assisted qualitative review by ChatGPT",
+    "qualitative_review_status": "Reviewed and confirmed manually by the learner",
+    "human_confirmed": true,
+    "human_reviewers": [
+      "Tr\u1ea7n V\u0103n Quang"
+    ]
+  },
+  {
+    "strategy": "C",
+    "coherence_mean": 1.8,
+    "coherence_n": 10,
+    "grounding_mean": 2.0,
+    "grounding_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "metadata_correct_n": 15,
+    "metadata_N": 15,
+    "filter_compliance": {
+      "dev": {
+        "n": 3,
+        "N": 3
+      },
+      "test": {
+        "n": 1,
+        "N": 1
+      }
+    },
+    "qualitative_reviewer": "AI-assisted qualitative review by ChatGPT",
+    "qualitative_review_status": "Reviewed and confirmed manually by the learner",
+    "human_confirmed": true,
+    "human_reviewers": [
+      "Tr\u1ea7n V\u0103n Quang"
+    ]
+  }
+]
